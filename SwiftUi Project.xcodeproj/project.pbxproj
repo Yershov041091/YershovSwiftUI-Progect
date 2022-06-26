@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		292784202868E57B000EB119 /* menuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2927841F2868E57B000EB119 /* menuView.swift */; };
 		2977A5252864FEA400C63859 /* SwiftUi_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A5242864FEA400C63859 /* SwiftUi_ProjectApp.swift */; };
 		2977A5272864FEA400C63859 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977A5262864FEA400C63859 /* ContentView.swift */; };
 		2977A5292864FEA600C63859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2977A5282864FEA600C63859 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2927841F2868E57B000EB119 /* menuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuView.swift; sourceTree = "<group>"; };
 		2977A5212864FEA400C63859 /* SwiftUi Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUi Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2977A5242864FEA400C63859 /* SwiftUi_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUi_ProjectApp.swift; sourceTree = "<group>"; };
 		2977A5262864FEA400C63859 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				2977A5242864FEA400C63859 /* SwiftUi_ProjectApp.swift */,
 				2977A5262864FEA400C63859 /* ContentView.swift */,
+				2927841F2868E57B000EB119 /* menuView.swift */,
 				2977A5282864FEA600C63859 /* Assets.xcassets */,
 				2977A52A2864FEA600C63859 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292784202868E57B000EB119 /* menuView.swift in Sources */,
 				2977A5272864FEA400C63859 /* ContentView.swift in Sources */,
 				2977A5252864FEA400C63859 /* SwiftUi_ProjectApp.swift in Sources */,
 			);
