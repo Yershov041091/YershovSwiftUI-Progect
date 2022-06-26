@@ -10,11 +10,21 @@ import SwiftUI
 struct menuView: View {
     var body: some View {
         VStack {
-            MenuRow(title: "Личный кабинет", icone: "gear")
-            MenuRow(title: "Счет", icone: "creditcard")
-            MenuRow(title: "Выход", icone: "person.crop.circle")
+            Spacer()
+            
+            VStack {
+                MenuRow(title: "Личный кабинет", icone: "gear")
+                MenuRow(title: "Счет", icone: "creditcard")
+                MenuRow(title: "Выход", icone: "person.crop.circle")
+            }
+            .frame(maxWidth: .infinity)
+            .frame(height: 300)
+            .background(LinearGradient(gradient: Gradient(colors: [Color(.init(red: 0.8431, green: 0.9176, blue: 0.9686, alpha: 1)), Color(.init(red: 1, green: 1, blue: 1, alpha: 1))]), startPoint: .top, endPoint: .bottom))
+            .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+            .shadow(radius: 30)
+        .padding(.horizontal, 30)
         }
-        .frame(maxWidth: .infinity)
+        .padding(.bottom, 30)
     }
 }
 
