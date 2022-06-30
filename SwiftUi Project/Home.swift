@@ -10,7 +10,8 @@ import SwiftUI
 struct Home: View {
     
     @State var showProfile = false
-    @ State var viewState = CGSize.zero
+    @State var viewState = CGSize.zero
+    @State var showContent = false
     
     var body: some View {
         
@@ -19,7 +20,7 @@ struct Home: View {
             Color(UIColor.init(_colorLiteralRed: 0.9373, green: 0.949, blue: 0.9569, alpha: 1))
                 .edgesIgnoringSafeArea(.all)
                 
-            HomeView(showProfile: $showProfile)
+            HomeView(showProfile: $showProfile, showContent: $showContent)
             
             .padding(.top, 44)
             .background(Color.white)
@@ -52,6 +53,31 @@ struct Home: View {
                             self.viewState = .zero
                         }
                 )
+            if showContent{
+                
+                Color.white
+                    .edgesIgnoringSafeArea(.all)
+                ContentView()
+                
+                VStack {
+                    HStack{
+                        Spacer()
+                        Image(systemName: "xmark")
+                            .frame(width: 36, height: 36)
+                            .foregroundColor(.white)
+                            .background(.black)
+                        .clipShape(Circle())
+                    }
+                    Spacer()
+                }
+                .offset(x: -20, y: -16)
+                .transition(.move(edge: .top))
+                .animation(.spring(response: 0.6, dampingFraction: 0.8, blendDuration: 0), value: showContent)
+                .onTapGesture {
+                    self.showContent = false
+
+                }
+            }
         }
 }
 }
